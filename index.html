@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exquisite Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <div id="SubmitRes">    
+        <h2>Olodo Finish the Question!!</h2>
+    </div>
+    <div id="main">
+    <nav>
+        <img class="logo" src="asset/2760.jpg" alt="logo">
+        <h1>Exquisite's Quiz</h1>
+        <h2 id="timer"></h2>
+    </nav>
+<body>
+    <section>
+        <h2 id="question"></h2>
+        <ol type="A">
+            <li><span id="option0"onclick="calculateScore(this)" class="highlight"></span></li><br>
+            <li><span id="option1"onclick="calculateScore(this)" class="highlight"></span></li><br>
+            <li><span id="option2"onclick="calculateScore(this)" class="highlight"></span></li><br>
+            <li><span id="option3"onclick="calculateScore(this)"class="highlight"></span></li><br>
+        </ol>
+        <p class="stat"></p>
+    </section>
+    <button id="btn" class="next-btn">Next</button>
+    <button id="btn2" class="prev-btn">Prev</button>
+    <button id="btn3">Submit</button>
+</div>
+
+    <div id="scoreboard">
+        <h2 id="scores" class="board"></h2>
+        <button class="back">Back to quiz</button>
+        <button onclick="checkAnswer()" class="check">Check Answer</button>
+    </div>
+    <div id="answer">
+        <h3 class="ans">Answer</h3>
+        <ol type="1" class="list-answer" id="listmyli">
+
+        </ol>
+        <button onclick="BackToPrev()" class="check">Back to Prev</button>
+    </div>
+    
+   
+    <script src="index.js" defer></script>
+</body>
+</html>
